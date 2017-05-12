@@ -89,13 +89,39 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "drunkensoftball/UI/Home/HomeViewController.swift"
-            timestampString = "516144218.487249"
+            filePath = "drunkensoftball/UI/Common/Views/PaddedUITextField.swift"
+            timestampString = "516144631.705601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "textRect(forBounds:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "drunkensoftball/UI/Home/HomeViewController.swift"
+            timestampString = "516250042.031033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +131,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "drunkensoftball/UI/Common/Views/PaddedUITextField.swift"
-            timestampString = "516144631.705601"
+            filePath = "drunkensoftball/UI/Home/RosterTableViewCell.swift"
+            timestampString = "516231193.604422"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "textRect(forBounds:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "config(name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

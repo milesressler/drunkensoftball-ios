@@ -17,6 +17,9 @@
 		5A5CA7501E44003400795985 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA74F1E44003400795985 /* TabBarController.swift */; };
 		5A661C181EC3BD8400734C2D /* PaddedUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */; };
 		5A661C1A1EC3BEB400734C2D /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C191EC3BEB400734C2D /* RosterTableViewCell.swift */; };
+		5A661C281EC517C000734C2D /* PlayerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C271EC517BF00734C2D /* PlayerFormView.swift */; };
+		5A661C2A1EC5189C00734C2D /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C291EC5189C00734C2D /* Position.swift */; };
+		5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */; };
 		5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */; };
 		5A69C3811DAE8BA900DD13A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */; };
 		5A69C3841DAE8BA900DD13A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69C3821DAE8BA900DD13A0 /* Main.storyboard */; };
@@ -25,6 +28,7 @@
 		5ACCE22A1E42E21600B42E69 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE2291E42E21600B42E69 /* Authentication.swift */; };
 		5ACCE22D1E42E30E00B42E69 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE22C1E42E30E00B42E69 /* BaseObject.swift */; };
 		5ACCE22F1E43E9D900B42E69 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE22E1E43E9D900B42E69 /* Router.swift */; };
+		5AE6CADD1EC54C5B0098A779 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6CADC1EC54C5B0098A779 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,9 @@
 		5A5CA74F1E44003400795985 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = UI/Common/ViewControllers/TabBarController.swift; sourceTree = "<group>"; };
 		5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaddedUITextField.swift; path = UI/Common/Views/PaddedUITextField.swift; sourceTree = "<group>"; };
 		5A661C191EC3BEB400734C2D /* RosterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RosterTableViewCell.swift; path = UI/Home/RosterTableViewCell.swift; sourceTree = "<group>"; };
+		5A661C271EC517BF00734C2D /* PlayerFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerFormView.swift; path = UI/Home/PlayerFormView.swift; sourceTree = "<group>"; };
+		5A661C291EC5189C00734C2D /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerFormModalViewController.swift; path = UI/Home/PlayerFormModalViewController.swift; sourceTree = "<group>"; };
 		5A69C37B1DAE8BA900DD13A0 /* drunkensoftball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunkensoftball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 		5ACCE2291E42E21600B42E69 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = auth/Authentication.swift; sourceTree = "<group>"; };
 		5ACCE22C1E42E30E00B42E69 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObject.swift; path = common/BaseObject.swift; sourceTree = "<group>"; };
 		5ACCE22E1E43E9D900B42E69 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = common/Router.swift; sourceTree = "<group>"; };
+		5AE6CADC1EC54C5B0098A779 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/player/Player.swift; sourceTree = "<group>"; };
 		61E6953079474C5EF7FF288A /* Pods-drunkensoftball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drunkensoftball.release.xcconfig"; path = "Pods/Target Support Files/Pods-drunkensoftball/Pods-drunkensoftball.release.xcconfig"; sourceTree = "<group>"; };
 		F7651D2CA431C98A1938E78B /* Pods_drunkensoftball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drunkensoftball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +88,8 @@
 				5A5CA7441E43FB5B00795985 /* HomeViewController.swift */,
 				5A5CA7461E43FB7500795985 /* HomeView.swift */,
 				5A661C191EC3BEB400734C2D /* RosterTableViewCell.swift */,
+				5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */,
+				5A661C271EC517BF00734C2D /* PlayerFormView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5A69C3971DAE979700DD13A0 /* User.swift */,
+				5A661C291EC5189C00734C2D /* Position.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 		5ACCE2321E43F4FF00B42E69 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5AE6CADE1EC54C600098A779 /* player */,
 				5ACCE2371E43F5A700B42E69 /* extensions */,
 				5ACCE22B1E42E2F400B42E69 /* common */,
 				5ACCE2281E42E1F600B42E69 /* auth */,
@@ -228,6 +240,14 @@
 				5A5CA7411E43F63900795985 /* DefaultKeysExtension.swift */,
 			);
 			name = extensions;
+			sourceTree = "<group>";
+		};
+		5AE6CADE1EC54C600098A779 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				5AE6CADC1EC54C5B0098A779 /* Player.swift */,
+			);
+			name = player;
 			sourceTree = "<group>";
 		};
 		FC2BD200F252DD513603B453 /* Frameworks */ = {
@@ -371,12 +391,16 @@
 				5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */,
 				5A661C1A1EC3BEB400734C2D /* RosterTableViewCell.swift in Sources */,
 				5A5CA7451E43FB5B00795985 /* HomeViewController.swift in Sources */,
+				5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */,
 				5A5CA74C1E43FF9C00795985 /* ProfileViewController.swift in Sources */,
 				5A69C3981DAE979700DD13A0 /* User.swift in Sources */,
 				5ACCE22F1E43E9D900B42E69 /* Router.swift in Sources */,
 				5A5CA7501E44003400795985 /* TabBarController.swift in Sources */,
 				5ACCE22A1E42E21600B42E69 /* Authentication.swift in Sources */,
 				5ACCE22D1E42E30E00B42E69 /* BaseObject.swift in Sources */,
+				5A661C2A1EC5189C00734C2D /* Position.swift in Sources */,
+				5AE6CADD1EC54C5B0098A779 /* Player.swift in Sources */,
+				5A661C281EC517C000734C2D /* PlayerFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

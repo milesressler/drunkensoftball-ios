@@ -12,33 +12,33 @@ import Stevia
 class RosterTableViewCell: UITableViewCell {
     
     let nameLabel = UILabel()
-    let deleteButton = UIButton()
     
-    
-    convenience init() {
-        self.init(frame:CGRect.zero)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: .value1, reuseIdentifier: reuseIdentifier)
         render()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func render() {
         self.sv(
-            nameLabel,
-            deleteButton
+            nameLabel
         )
         
         self.layout(
             4,
-            |-4-nameLabel-4-deleteButton.width(44)-4-| ~ 44,
+            |-4-nameLabel-4-| ~ 44,
             4
         )
         
         nameLabel.textColor = UIColor.gray
-        deleteButton.setTitle("X", for: .normal)
-        deleteButton.setTitleColor(UIColor.red, for: .normal)
     }
     
     func config(name: String?) {
         nameLabel.text = name
     }
+    
     
 }
