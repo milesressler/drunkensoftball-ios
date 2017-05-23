@@ -7,17 +7,20 @@
 //
 
 import Foundation
+import SwiftyUserDefaults
+import Stevia
 
 class HomeViewController: UIViewController {
     
     let homeView = HomeView()
-    var players: [Player]?
+    var team: Team?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
         
         self.view = homeView
+        homeView.delegate = self
         homeView.rosterList.dataSource = self
         homeView.rosterList.delegate = self
         homeView.rosterList.register(RosterTableViewCell.self, forCellReuseIdentifier: "RosterTableViewCell")
@@ -25,32 +28,48 @@ class HomeViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.edit, target: self, action: #selector(toggleEdit))
         navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showNewPlayerForm))]
 
-        
-        homeView.delegate = self
-        
-        players = [Player]()
-        players?.append(Player(name: "Fran Hamlin"))
-        players?.append(Player(name: "Uncle Billy"))
-        players?.append(Player(name: "Kirk"))
-        
+        if let team =  Defaults[.team] {
+            config(team: team)
+        } else {
+            let newTeam = Team()
+            newTeam.roster = [RosterEntry]()
+            config(team: newTeam)
+            saveTeam()
+        }
+    }
+    
+    func config(team: Team) {
+        self.team = team
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationController?.navigationBar.isTranslucent = false
-        self.homeView.rosterList.reloadData()
+        self.homeView.rosterList.reloadData()    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    
+    fileprivate func saveTeam() {
+        Defaults[.team] = self.team
     }
     
     func showNewPlayerForm() {
-        let newPlayer = Player(name: nil)
-        let formVC = PlayerFormModalViewController(displayTitle: "New Player", player: newPlayer)
+        let newRosterEntry = RosterEntry()
+        newRosterEntry.user = User(displayName: nil)
+        newRosterEntry.team = self.team
+        // todo set team for roster entry
+        let formVC = PlayerFormModalViewController(displayTitle: "New Player", player: newRosterEntry)
         formVC.present(presentingVC: self, successHandler: {
-            self.players?.append(newPlayer)
-            self.homeView.rosterList.reloadData()
+            self.team?.roster?.append(newRosterEntry)
+            self.homeView.rosterList.beginUpdates()
+            self.homeView.rosterList.insertRows(at: [IndexPath(row: (self.team?.roster?.count ?? 1) - 1 , section: 0)], with: .automatic)
+            self.homeView.rosterList.endUpdates()
+            self.saveTeam()
         }, cancelHandler: {
             
         })
-        self.present(formVC, animated: true, completion: nil)
     }
     
     func toggleEdit() {
@@ -62,13 +81,6 @@ class HomeViewController: UIViewController {
         self.homeView.rosterList.isEditing = !self.homeView.rosterList.isEditing
     }
     
-    func addName(name: String) {
-        
-        players?.append(Player(name: name))
-        homeView.rosterList.beginUpdates()
-        homeView.rosterList.insertRows(at: [IndexPath(row: (players?.count ?? 1) - 1 , section: 0)], with: .automatic)
-        homeView.rosterList.endUpdates()
-    }
 }
 
 extension HomeViewController: HomeViewDelegate {
@@ -81,12 +93,17 @@ extension HomeViewController: HomeViewDelegate {
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RosterTableViewCell") as! RosterTableViewCell
-        cell.config(name: players![indexPath.row].name ?? "no name")
+        let rosterEntry = team?.roster![indexPath.row]
+        
+        cell.config(name: rosterEntry?.user?.displayName ?? "no name",
+                    fieldPosition: indexPath.row < 10 ? rosterEntry?.getFieldPosition() : nil,
+                    battingPosition: indexPath.row < 10 ? indexPath.row + 1 : nil)
+        cell.delegate = self
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players?.count ?? 0
+        return team?.roster?.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -103,20 +120,49 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            players?.remove(at: indexPath.row)
+            team?.roster?.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            saveTeam()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let player = players![indexPath.row]
+        let player = team!.roster![indexPath.row]
         let formVC = PlayerFormModalViewController(displayTitle: "Edit", player: player)
         formVC.present(presentingVC: self, successHandler: {
+            self.saveTeam()
             self.homeView.rosterList.reloadData()
         }, cancelHandler: {
-            
+            self.homeView.rosterList.reloadData()
         })
-        self.present(formVC, animated: true, completion: nil)
+    }
+}
+
+extension HomeViewController:RosterTableViewCellDelegate {
+    func didTapMoveUp(cell: UITableViewCell) {
+        
+        let index = self.homeView.rosterList.indexPath(for: cell)!
+        if index.row > 0 {
+            toggleEntries(lowerIndex: index.row - 1)
+        }
+    }
+    
+    func didTapMoveDown(cell: UITableViewCell) {
+        
+        let index = self.homeView.rosterList.indexPath(for: cell)!
+        if index.row < team!.roster!.count-1 {
+            toggleEntries(lowerIndex: index.row)
+        }
+    }
+    
+    fileprivate func toggleEntries(lowerIndex: Int) {
+    
+        let topPlayer = team!.roster![lowerIndex]
+        team!.roster![lowerIndex] = team!.roster![lowerIndex + 1]
+        team!.roster![lowerIndex + 1] = topPlayer
+    
+        saveTeam()
+        homeView.rosterList.reloadData()
     }
 }
 

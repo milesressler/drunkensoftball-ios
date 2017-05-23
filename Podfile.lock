@@ -71,6 +71,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.7)
   - GTMSessionFetcher/Full (1.1.7):
     - GTMSessionFetcher/Core (= 1.1.7)
+  - KeychainAccess (3.0.2)
   - SteviaLayout (3.1.2)
   - SwiftyJSON (3.1.3)
   - SwiftyUserDefaults (3.0.0)
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - FacebookShare
   - FontAwesome.swift (from `https://github.com/thii/FontAwesome.swift`)
   - Google/SignIn
+  - KeychainAccess (~> 3.0.0)
   - SteviaLayout
   - SwiftyJSON
   - SwiftyUserDefaults
@@ -118,10 +120,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   SteviaLayout: 8b68904fc1e1897ba2451d795b0d88a7c6973b60
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: cd23abc244d32e186b6f94463345a7bff3f5a6dc
+PODFILE CHECKSUM: 0caa047012ec7b35be49e1a5d39fe6810d755d53
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

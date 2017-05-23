@@ -18,17 +18,20 @@
 		5A661C181EC3BD8400734C2D /* PaddedUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */; };
 		5A661C1A1EC3BEB400734C2D /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C191EC3BEB400734C2D /* RosterTableViewCell.swift */; };
 		5A661C281EC517C000734C2D /* PlayerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C271EC517BF00734C2D /* PlayerFormView.swift */; };
-		5A661C2A1EC5189C00734C2D /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C291EC5189C00734C2D /* Position.swift */; };
+		5A661C2A1EC5189C00734C2D /* FieldPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C291EC5189C00734C2D /* FieldPosition.swift */; };
 		5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */; };
 		5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */; };
 		5A69C3811DAE8BA900DD13A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */; };
 		5A69C3841DAE8BA900DD13A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69C3821DAE8BA900DD13A0 /* Main.storyboard */; };
 		5A69C3861DAE8BA900DD13A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A69C3851DAE8BA900DD13A0 /* Assets.xcassets */; };
 		5A69C3981DAE979700DD13A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C3971DAE979700DD13A0 /* User.swift */; };
+		5A99E45E1ECBE93C00B61B37 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A99E45D1ECBE93C00B61B37 /* Team.swift */; };
 		5ACCE22A1E42E21600B42E69 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE2291E42E21600B42E69 /* Authentication.swift */; };
 		5ACCE22D1E42E30E00B42E69 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE22C1E42E30E00B42E69 /* BaseObject.swift */; };
 		5ACCE22F1E43E9D900B42E69 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCE22E1E43E9D900B42E69 /* Router.swift */; };
-		5AE6CADD1EC54C5B0098A779 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6CADC1EC54C5B0098A779 /* Player.swift */; };
+		5AE6CADD1EC54C5B0098A779 /* RosterEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6CADC1EC54C5B0098A779 /* RosterEntry.swift */; };
+		5AE6CAE01EC652D90098A779 /* PositionSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6CADF1EC652D90098A779 /* PositionSelectionView.swift */; };
+		5AEEC8AC1ED3CA1D008349D0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEEC8AB1ED3CA1D008349D0 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +47,7 @@
 		5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaddedUITextField.swift; path = UI/Common/Views/PaddedUITextField.swift; sourceTree = "<group>"; };
 		5A661C191EC3BEB400734C2D /* RosterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RosterTableViewCell.swift; path = UI/Home/RosterTableViewCell.swift; sourceTree = "<group>"; };
 		5A661C271EC517BF00734C2D /* PlayerFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerFormView.swift; path = UI/Home/PlayerFormView.swift; sourceTree = "<group>"; };
-		5A661C291EC5189C00734C2D /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		5A661C291EC5189C00734C2D /* FieldPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldPosition.swift; sourceTree = "<group>"; };
 		5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerFormModalViewController.swift; path = UI/Home/PlayerFormModalViewController.swift; sourceTree = "<group>"; };
 		5A69C37B1DAE8BA900DD13A0 /* drunkensoftball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunkensoftball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +56,13 @@
 		5A69C3851DAE8BA900DD13A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A69C38A1DAE8BA900DD13A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A69C3971DAE979700DD13A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A99E45D1ECBE93C00B61B37 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Model/team/Team.swift; sourceTree = "<group>"; };
 		5ACCE2291E42E21600B42E69 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = auth/Authentication.swift; sourceTree = "<group>"; };
 		5ACCE22C1E42E30E00B42E69 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObject.swift; path = common/BaseObject.swift; sourceTree = "<group>"; };
 		5ACCE22E1E43E9D900B42E69 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = common/Router.swift; sourceTree = "<group>"; };
-		5AE6CADC1EC54C5B0098A779 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/player/Player.swift; sourceTree = "<group>"; };
+		5AE6CADC1EC54C5B0098A779 /* RosterEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RosterEntry.swift; path = Model/player/RosterEntry.swift; sourceTree = "<group>"; };
+		5AE6CADF1EC652D90098A779 /* PositionSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionSelectionView.swift; path = UI/Common/Views/PositionSelectionView.swift; sourceTree = "<group>"; };
+		5AEEC8AB1ED3CA1D008349D0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = UI/Common/Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		61E6953079474C5EF7FF288A /* Pods-drunkensoftball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drunkensoftball.release.xcconfig"; path = "Pods/Target Support Files/Pods-drunkensoftball/Pods-drunkensoftball.release.xcconfig"; sourceTree = "<group>"; };
 		F7651D2CA431C98A1938E78B /* Pods_drunkensoftball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drunkensoftball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */,
+				5AE6CADF1EC652D90098A779 /* PositionSelectionView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,9 +162,18 @@
 			isa = PBXGroup;
 			children = (
 				5A69C3971DAE979700DD13A0 /* User.swift */,
-				5A661C291EC5189C00734C2D /* Position.swift */,
+				5A661C291EC5189C00734C2D /* FieldPosition.swift */,
 			);
 			path = user;
+			sourceTree = "<group>";
+		};
+		5A99E45C1ECBE92000B61B37 /* team */ = {
+			isa = PBXGroup;
+			children = (
+				5A99E45D1ECBE93C00B61B37 /* Team.swift */,
+				5AE6CADC1EC54C5B0098A779 /* RosterEntry.swift */,
+			);
+			name = team;
 			sourceTree = "<group>";
 		};
 		5ACCE2281E42E1F600B42E69 /* auth */ = {
@@ -192,7 +208,7 @@
 		5ACCE2321E43F4FF00B42E69 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5AE6CADE1EC54C600098A779 /* player */,
+				5A99E45C1ECBE92000B61B37 /* team */,
 				5ACCE2371E43F5A700B42E69 /* extensions */,
 				5ACCE22B1E42E2F400B42E69 /* common */,
 				5ACCE2281E42E1F600B42E69 /* auth */,
@@ -213,6 +229,7 @@
 		5ACCE2341E43F53300B42E69 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5AEEC8AA1ED3C9F7008349D0 /* Extensions */,
 				5A5CA74E1E43FFE000795985 /* ViewControllers */,
 				5A5CA74D1E43FFC800795985 /* Views */,
 			);
@@ -242,12 +259,12 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
-		5AE6CADE1EC54C600098A779 /* player */ = {
+		5AEEC8AA1ED3C9F7008349D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5AE6CADC1EC54C5B0098A779 /* Player.swift */,
+				5AEEC8AB1ED3CA1D008349D0 /* UIViewControllerExtension.swift */,
 			);
-			name = player;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		FC2BD200F252DD513603B453 /* Frameworks */ = {
@@ -388,18 +405,21 @@
 				5A5CA74A1E43FF8500795985 /* ProfileView.swift in Sources */,
 				5A661C181EC3BD8400734C2D /* PaddedUITextField.swift in Sources */,
 				5A69C3811DAE8BA900DD13A0 /* LoginViewController.swift in Sources */,
+				5AEEC8AC1ED3CA1D008349D0 /* UIViewControllerExtension.swift in Sources */,
 				5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */,
 				5A661C1A1EC3BEB400734C2D /* RosterTableViewCell.swift in Sources */,
 				5A5CA7451E43FB5B00795985 /* HomeViewController.swift in Sources */,
+				5A99E45E1ECBE93C00B61B37 /* Team.swift in Sources */,
 				5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */,
+				5AE6CAE01EC652D90098A779 /* PositionSelectionView.swift in Sources */,
 				5A5CA74C1E43FF9C00795985 /* ProfileViewController.swift in Sources */,
 				5A69C3981DAE979700DD13A0 /* User.swift in Sources */,
 				5ACCE22F1E43E9D900B42E69 /* Router.swift in Sources */,
 				5A5CA7501E44003400795985 /* TabBarController.swift in Sources */,
 				5ACCE22A1E42E21600B42E69 /* Authentication.swift in Sources */,
 				5ACCE22D1E42E30E00B42E69 /* BaseObject.swift in Sources */,
-				5A661C2A1EC5189C00734C2D /* Position.swift in Sources */,
-				5AE6CADD1EC54C5B0098A779 /* Player.swift in Sources */,
+				5A661C2A1EC5189C00734C2D /* FieldPosition.swift in Sources */,
+				5AE6CADD1EC54C5B0098A779 /* RosterEntry.swift in Sources */,
 				5A661C281EC517C000734C2D /* PlayerFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

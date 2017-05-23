@@ -13,6 +13,17 @@ class User: BaseObject {
     
     var username: String?
     var displayName: String?
+    var joinedTeams: [Team]?
+    var managedTeams: [Team]?
+    
+    
+    init(displayName: String?) {
+        self.displayName = displayName
+    }
+    
+    required init() {
+//        fatalError("init() has not been implemented")
+    }
     
 //    func register(username: String, password: String, email: String) -> String {
 //        

@@ -20,6 +20,8 @@ class PlayerFormView: UIView {
     let nameField = UITextField()
     let okButton = UIButton()
     let cancelButton = UIButton()
+    //    let positionSelector = PositionSelectionView()
+    let positionSelector = UIPickerView()
     
     let containerView = UIView()
     
@@ -32,7 +34,7 @@ class PlayerFormView: UIView {
     
     func render() {
         
-        self.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(0.5))
+        self.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(0.4))
         containerView.backgroundColor = UIColor.white
         
         self.sv(
@@ -40,7 +42,8 @@ class PlayerFormView: UIView {
                 titleLabel,
                 nameField,
                 okButton,
-                cancelButton
+                cancelButton,
+                positionSelector
             )
         )
         
@@ -53,17 +56,23 @@ class PlayerFormView: UIView {
             16,
             |-8-nameField-8-|,
             16,
+            |-16-positionSelector-16-|,
+            8,
             |-8-cancelButton-4-okButton-8-| ~ 44,
             4
         )
         
         equalWidths(okButton,cancelButton)
         
+        positionSelector.Height == positionSelector.Width * 0.8
+        
         containerView.layer.cornerRadius = 8
         
         titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.systemFont(ofSize: 20)
         
         nameField.placeholder = "Player Name"
+        nameField.textAlignment = .center
         
         okButton.setTitle("Okay", for: .normal)
         okButton.setTitleColor(.black, for: .normal)
@@ -79,6 +88,7 @@ class PlayerFormView: UIView {
         cancelButton.layer.borderColor = UIColor.gray.cgColor
         cancelButton.layer.cornerRadius = 4
         cancelButton.addTarget(self, action: #selector(didTapCancel), for: .touchUpInside)
+        
     }
     
     func config(title: String, name: String?) {

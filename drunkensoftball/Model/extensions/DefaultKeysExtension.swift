@@ -12,12 +12,13 @@ import SwiftyUserDefaults
 
 extension DefaultsKeys {
     static let accessToken = DefaultsKey<String?>("accessToken")
+    static let team = DefaultsKey<Team?>("team")
 //    static let user = DefaultsKey<User>("user")
 }
 
-//extension UserDefaults {
-//    subscript(key: DefaultsKey<User?>) -> User? {
-//        get { return unarchive(key) }
-//        set { archive(key, newValue) }
-//    }
-//}
+extension UserDefaults {
+    subscript(key: DefaultsKey<Team?>) -> Team? {
+        get { return unarchive(key) }
+        set { archive(key, newValue) }
+    }
+}

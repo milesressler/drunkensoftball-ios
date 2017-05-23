@@ -11,6 +11,7 @@ target 'drunkensoftball' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'Google/SignIn'
+  pod 'KeychainAccess', '~>3.0.0'
   pod 'SwiftyJSON'
   pod 'EVReflection'
   pod 'SwiftyUserDefaults'
