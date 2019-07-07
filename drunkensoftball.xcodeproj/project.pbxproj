@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		24B1B64E4351E9794126F6F9 /* Pods_drunkensoftball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7651D2CA431C98A1938E78B /* Pods_drunkensoftball.framework */; };
 		5A003FFB1DDC0BA7002EDB7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A003FFA1DDC0BA7002EDB7A /* GoogleService-Info.plist */; };
+		5A5B3C9620A36A2D00ECBB6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B3C9520A36A2D00ECBB6D /* LoginView.swift */; };
+		5A5B3C9820A36AE400ECBB6D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B3C9720A36AE400ECBB6D /* ButtonView.swift */; };
+		5A5B3C9A20A36C5C00ECBB6D /* SZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B3C9920A36C5C00ECBB6D /* SZ.swift */; };
 		5A5CA7421E43F63900795985 /* DefaultKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA7411E43F63900795985 /* DefaultKeysExtension.swift */; };
 		5A5CA7451E43FB5B00795985 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA7441E43FB5B00795985 /* HomeViewController.swift */; };
 		5A5CA7471E43FB7500795985 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA7461E43FB7500795985 /* HomeView.swift */; };
@@ -22,7 +25,6 @@
 		5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A661C2B1EC519DF00734C2D /* PlayerFormModalViewController.swift */; };
 		5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */; };
 		5A69C3811DAE8BA900DD13A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */; };
-		5A69C3841DAE8BA900DD13A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69C3821DAE8BA900DD13A0 /* Main.storyboard */; };
 		5A69C3861DAE8BA900DD13A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A69C3851DAE8BA900DD13A0 /* Assets.xcassets */; };
 		5A69C3981DAE979700DD13A0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A69C3971DAE979700DD13A0 /* User.swift */; };
 		5A99E45E1ECBE93C00B61B37 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A99E45D1ECBE93C00B61B37 /* Team.swift */; };
@@ -38,6 +40,9 @@
 		48809BE5FCD813D72B3D68C9 /* Pods-drunkensoftball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drunkensoftball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drunkensoftball/Pods-drunkensoftball.debug.xcconfig"; sourceTree = "<group>"; };
 		5A003FFA1DDC0BA7002EDB7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A003FFC1DDC0CAB002EDB7A /* drunkensoftball-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drunkensoftball-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A5B3C9520A36A2D00ECBB6D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/LoginView.swift; sourceTree = "<group>"; };
+		5A5B3C9720A36AE400ECBB6D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonView.swift; path = UI/Common/Views/ButtonView.swift; sourceTree = "<group>"; };
+		5A5B3C9920A36C5C00ECBB6D /* SZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SZ.swift; path = Constants/SZ.swift; sourceTree = "<group>"; };
 		5A5CA7411E43F63900795985 /* DefaultKeysExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultKeysExtension.swift; path = Model/extensions/DefaultKeysExtension.swift; sourceTree = "<group>"; };
 		5A5CA7441E43FB5B00795985 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = UI/Home/HomeViewController.swift; sourceTree = "<group>"; };
 		5A5CA7461E43FB7500795985 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = UI/Home/HomeView.swift; sourceTree = "<group>"; };
@@ -52,7 +57,6 @@
 		5A69C37B1DAE8BA900DD13A0 /* drunkensoftball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunkensoftball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A69C37E1DAE8BA900DD13A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5A69C3831DAE8BA900DD13A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A69C3851DAE8BA900DD13A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A69C38A1DAE8BA900DD13A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A69C3971DAE979700DD13A0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5A5B3C9B20A36C6300ECBB6D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B3C9920A36C5C00ECBB6D /* SZ.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		5A5B3CA420A38CD000ECBB6D /* Team */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Team;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		5A5CA7431E43FB3F00795985 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +134,7 @@
 			children = (
 				5A661C171EC3BD8400734C2D /* PaddedUITextField.swift */,
 				5AE6CADF1EC652D90098A779 /* PositionSelectionView.swift */,
+				5A5B3C9720A36AE400ECBB6D /* ButtonView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -196,6 +217,7 @@
 		5ACCE2311E43F4F500B42E69 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5A5B3CA420A38CD000ECBB6D /* Team */,
 				5A5CA7431E43FB3F00795985 /* Home */,
 				5A5CA7481E43FF6600795985 /* Profile */,
 				5ACCE2331E43F52300B42E69 /* Login */,
@@ -221,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				5A69C3801DAE8BA900DD13A0 /* LoginViewController.swift */,
-				5A69C3821DAE8BA900DD13A0 /* Main.storyboard */,
+				5A5B3C9520A36A2D00ECBB6D /* LoginView.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -229,6 +251,7 @@
 		5ACCE2341E43F53300B42E69 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5A5B3C9B20A36C6300ECBB6D /* Constants */,
 				5AEEC8AA1ED3C9F7008349D0 /* Extensions */,
 				5A5CA74E1E43FFE000795985 /* ViewControllers */,
 				5A5CA74D1E43FFC800795985 /* Views */,
@@ -312,7 +335,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 988B7D39S9;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -341,7 +364,6 @@
 			files = (
 				5A003FFB1DDC0BA7002EDB7A /* GoogleService-Info.plist in Resources */,
 				5A69C3861DAE8BA900DD13A0 /* Assets.xcassets in Resources */,
-				5A69C3841DAE8BA900DD13A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +376,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-drunkensoftball/Pods-drunkensoftball-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,13 +412,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drunkensoftball-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABBE2D897EC84E18BC039600 /* [CP] Copy Pods Resources */ = {
@@ -384,9 +430,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-drunkensoftball/Pods-drunkensoftball-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -408,9 +457,12 @@
 				5AEEC8AC1ED3CA1D008349D0 /* UIViewControllerExtension.swift in Sources */,
 				5A69C37F1DAE8BA900DD13A0 /* AppDelegate.swift in Sources */,
 				5A661C1A1EC3BEB400734C2D /* RosterTableViewCell.swift in Sources */,
+				5A5B3C9A20A36C5C00ECBB6D /* SZ.swift in Sources */,
+				5A5B3C9620A36A2D00ECBB6D /* LoginView.swift in Sources */,
 				5A5CA7451E43FB5B00795985 /* HomeViewController.swift in Sources */,
 				5A99E45E1ECBE93C00B61B37 /* Team.swift in Sources */,
 				5A661C2C1EC519DF00734C2D /* PlayerFormModalViewController.swift in Sources */,
+				5A5B3C9820A36AE400ECBB6D /* ButtonView.swift in Sources */,
 				5AE6CAE01EC652D90098A779 /* PositionSelectionView.swift in Sources */,
 				5A5CA74C1E43FF9C00795985 /* ProfileViewController.swift in Sources */,
 				5A69C3981DAE979700DD13A0 /* User.swift in Sources */,
@@ -425,17 +477,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5A69C3821DAE8BA900DD13A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A69C3831DAE8BA900DD13A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5A69C38B1DAE8BA900DD13A0 /* Debug */ = {
@@ -540,15 +581,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 988B7D39S9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = drunkensoftball/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.milessmiles.drunkensoftball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "961d4bbc-cc5c-44db-8727-7b30d059eed1";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "drunkensoftball-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0.1;
@@ -562,15 +605,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 988B7D39S9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = drunkensoftball/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.milessmiles.drunkensoftball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "961d4bbc-cc5c-44db-8727-7b30d059eed1";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "drunkensoftball-Bridging-Header.h";
 				SWIFT_VERSION = 3.0.1;
 			};

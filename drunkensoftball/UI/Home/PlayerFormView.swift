@@ -17,6 +17,7 @@ protocol PlayerFormDelegate {
 class PlayerFormView: UIView {
     
     let titleLabel = UILabel()
+    let divider = UIView()
     let nameField = UITextField()
     let okButton = UIButton()
     let cancelButton = UIButton()
@@ -40,6 +41,7 @@ class PlayerFormView: UIView {
         self.sv(
             containerView.sv(
                 titleLabel,
+                divider,
                 nameField,
                 okButton,
                 cancelButton,
@@ -53,14 +55,17 @@ class PlayerFormView: UIView {
         containerView.layout(
             8,
             |-8-titleLabel-8-|,
-            16,
-            |-8-nameField-8-|,
-            16,
-            |-16-positionSelector-16-|,
             8,
+            |-8-divider-8-| ~ 1,
+            8,
+            |-8-nameField-8-|,
+            4,
+            |-16-positionSelector-16-|,
+            4,
             |-8-cancelButton-4-okButton-8-| ~ 44,
             4
         )
+        divider.backgroundColor = UIColor.lightGray
         
         equalWidths(okButton,cancelButton)
         

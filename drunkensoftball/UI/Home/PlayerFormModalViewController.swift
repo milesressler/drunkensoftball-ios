@@ -59,7 +59,7 @@ class PlayerFormModalViewController: UIViewController {
     }
     
     func dismiss() {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

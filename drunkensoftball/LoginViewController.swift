@@ -7,17 +7,17 @@
 //
 
 import UIKit
-import FacebookLogin
-import FacebookCore
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
-    @IBOutlet weak var signInButton: GIDSignInButton!
+    let loginView = LoginView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.sv(loginView)
+        loginView.fillContainer()
         GIDSignIn.sharedInstance().uiDelegate = self
-        //GIDSignIn.sharedInstance().signInSilently()
+//        GIDSignIn.sharedInstance().signInSilently()
     }
 
     override func didReceiveMemoryWarning() {

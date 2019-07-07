@@ -23,10 +23,14 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let homeTab = UINavigationController(rootViewController: HomeViewController())
         let homeTabItem = UITabBarItem(title: "Home", image: faImage(icon: .home), selectedImage: faImage(icon: .home))
+        homeTab.setNavigationBarHidden(false, animated: true)
+        homeTab.navigationBar.isTranslucent = false
         homeTab.tabBarItem = homeTabItem
         
         let profileTab = UINavigationController(rootViewController: ProfileViewController())
         let profileTabItem = UITabBarItem(title: "Profile", image: faImage(icon: .user), selectedImage: faImage(icon: .user))
+        profileTab.setNavigationBarHidden(false, animated: true)
+        profileTab.navigationBar.isTranslucent = false
         profileTab.tabBarItem = profileTabItem
 
         self.viewControllers = [homeTab, profileTab]

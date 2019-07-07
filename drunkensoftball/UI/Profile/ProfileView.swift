@@ -17,7 +17,7 @@ class ProfileView: UIView {
     }
     
     func render() {
-        self.backgroundColor = .red
+        self.backgroundColor = .white
     }
     
 }

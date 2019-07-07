@@ -17,7 +17,7 @@ class Authentication: BaseObject {
     
     func googleAuth(googleToken: String,  successHandler: @escaping (Authentication) -> Void) {
         var headers = HTTPHeaders()
-        headers["Authorization"] = googleToken
+        headers["X-Google-Authorization"] = googleToken
         print(googleToken)
         
         Alamofire.request("\(Router().HOST)/auth/google", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate().responseString { responseString in

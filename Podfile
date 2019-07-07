@@ -7,9 +7,6 @@ target 'drunkensoftball' do
 
   # Pods for drunkensoftball
   pod 'Alamofire', '~> 4.0'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
-  pod 'FacebookShare'
   pod 'Google/SignIn'
   pod 'KeychainAccess', '~>3.0.0'
   pod 'SwiftyJSON'

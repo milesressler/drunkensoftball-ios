@@ -27,4 +27,8 @@ class RosterEntry: BaseObject {
     func setFieldPosition(_ position: FieldPosition) {
         self.fieldPosition = position.rawValue as NSNumber
     }
+    
+    class func createNew(firstName: String, fieldPosition: FieldPosition?, battingPosition: NSNumber?) {
+        
+    }
 }

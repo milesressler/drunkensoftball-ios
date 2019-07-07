@@ -43,8 +43,6 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationController?.navigationBar.isTranslucent = false
         self.homeView.rosterList.reloadData()    }
     
     override func viewDidDisappear(_ animated: Bool) {

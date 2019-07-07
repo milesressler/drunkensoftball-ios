@@ -10,10 +10,8 @@ import Foundation
 import Alamofire
 
 class Router {
-    let HOST = "http://drunkensoftball.miles-smiles.us"
-    
-    
-    
+    let HOST = "https://api.drunkensoftball.miles-smiles.us"
+
 }
 
 protocol ResponseObjectSerializable {
